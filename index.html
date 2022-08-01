@@ -1,48 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- LINKS -->
 
-    <link rel="icon" href="./favicons/pokedex_icon.png">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./favicons/pokedex_icon.png" />
+    <link rel="stylesheet" href="./css/style.css" />
 
     <!-- MAIN JS  -->
     <script defer src="./js/script.js"></script>
 
     <title>Pokédex</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <main>
+      <img src="#" alt="pokemon" class="pokemon__image" />
 
-        <img src="#" alt="pokemon" class="pokemon__image">
+      <h1 class="pokemon__data">
+        <span class="pokemon__number"></span>
+        <span class="pokemon__name"></span>
+      </h1>
 
-        <h1 class="pokemon__data">
-            <span class="pokemon__number"></span> -
-            <span class="pokemon__name"></span>
-        </h1>
+      <form class="form">
+        <input
+          type="text"
+          class="input__search"
+          placeholder="Name or Number"
+          required
+        />
+      </form>
 
-        <form class="form">
-            <input 
-            type="text" 
-            class="input__search"
-            placeholder="Name or Number"
-            required
-            />
-        </form>
+      <div class="buttons">
+        <button class="button btn-prev" onclick="prevPokemon()">
+          &lt;&lt;
+        </button>
+        <button class="button btn-next" onclick="nextPokemon()">
+          &gt;&gt;
+        </button>
+      </div>
 
-        <div class="buttons">
-            <button class="button btn-prev" onclick="prevPokemon()""> &lt; Prev </button>
-            <button class="button btn-next" onclick="nextPokemon()"> Next &gt; </button>
-        </div>
-
-        <img src="./images/pokedex.png" alt="pokedex" class="pokedex">
-
+      <img src="./images/pokedex.png" alt="pokedex" class="pokedex" />
     </main>
-    
-</body>
+  </body>
 </html>

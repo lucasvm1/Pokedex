@@ -66,6 +66,30 @@ main {
     box-shadow: -1px 2px rgb(105, 105, 105), -3px 4px 0 rgb(51, 51, 51);
 }
 
+.team{
+    position: absolute;
+    bottom: 19%;
+    left: 69%;
+    width: 65%;
+    transform: translate(-57%, 0);
+    display: flex;
+    gap: 20px; 
+}
+
+.addPokemon {
+    width: 40%;
+    padding: 4%;
+    border: 2px solid black;
+    border-radius: 7px;
+    font-size: clamp(10px, 5vw, 1rem);
+    font-weight: 600;
+    color: #fff;
+    background-color:  rgb(33, 177, 14);
+    box-shadow: -2px 3px 0 rgb(27, 27, 27);
+    outline: none;
+    
+}
+
 .buttons {
     position: absolute;
     bottom: 10%;
@@ -90,6 +114,11 @@ main {
 }
 
 .button:active {
+    box-shadow: inset -4px 4px 0 rgb(27, 27, 27);
+    font-size: 0.9rem;
+}
+
+.addPokemon:active {
     box-shadow: inset -4px 4px 0 rgb(27, 27, 27);
     font-size: 0.9rem;
 }
